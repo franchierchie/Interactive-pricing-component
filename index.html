@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="tittle">Simple, traffic-based pricing</h1>
+    <p class="description">Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <p class="pageviews"><span class="pageviews-number"></span> Pageviews</p>
+      <input class="range-slider" type="range" min="1" max="5" value="3" step="1">
+      <p class="price">$<span class="price-number"></span><small>/month</small></p>
+
+      <div class="billing-container">
+        <p class="billing">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <p class="billing">Yearly Billing <p class="discount"><span class="discount-minus">-</span>25% <span class="discount-text">discount</span></p></p>
+      </div>
+
+      <div class="benefits-container">
+        <p class="benefit"><img class="check" src="./images/icon-check.svg" alt="check icon">Unlimited websites</p>
+        <p class="benefit"><img class="check" src="./images/icon-check.svg" alt="check icon">100% data ownership</p>
+        <p class="benefit"><img class="check" src="./images/icon-check.svg" alt="check icon">Email reports</p>
+      </div>
+      <button class="trial-btn">Start my trial</button>
+    </div>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
